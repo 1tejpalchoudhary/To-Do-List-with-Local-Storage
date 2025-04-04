@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1> To-Do List</h1>
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="Add a new task">
+            <button id="addButton"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        <ul class="todo-list" id="todoList">
+            <!-- Todo items will be added here -->
+            <!-- <li class="empty-state">
+                <i class="fas fa-check-circle"></i>
+                <p>No tasks found. Add your first task!</p>
+            </li> -->
+        </ul>
+        
+    </div>
+    <script src="index.js"></script>
+    <script>
+
+
+/// This is a simplest way to create a to do list script logic but i am inhencing the logic in index.js file
+    //     const todoInput = document.getElementById('todoInput');
+    //     const addButton = document.getElementById('addButton');
+    //     const todoList = document.getElementById('todoList');
+    //     const emptyState = document.querySelector('.empty-state');
+    //     const todos = [];
+       
+        
+    //     addButton.addEventListener('click', () => {
+    //         const todoText = todoInput.value.trim();
+    //         if (todoText) {
+    //             todos.push(todoText); 
+    //             renderTodos(todoText, todos.length - 1);
+    //             todoInput.value = '';
+    //             if(todos.length != 0){
+    //                 emptyState.remove();
+    //              }
+    //         }
+    //     });
+    //     function renderTodos(todoText,  index){
+    //         const li = document.createElement('li');
+    //         li.classList.add('todo-item');
+    //         li.innerHTML = `
+    //             <span> ${todoText}</span>
+    //             <button class="delete-button">
+    //             <i style="color: red" class="fas fa-trash red "></i>
+    //             </button>
+    //             `;
+    //             todoList.appendChild(li);
+    //     }
+    //     todoList.addEventListener('click', function (e) {
+    //     if (e.target.closest('.delete-button')) {
+    //         const item = e.target.closest('li');
+    //         item.remove();
+
+    //         // If list is empty again, show empty state
+    //         if (todoList.children.length === 0) {
+    //             todoList.appendChild(emptyState);
+    //         }
+    //     }
+    // });
+        
+      
+    </script>
+</body>
+</html>
